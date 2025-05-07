@@ -1,5 +1,308 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootstrap Navbar</title>
+    <!-- Bootstrap CSS -->
+    <link href="/css/bootstrap.min.css?5.3.0" rel="stylesheet" />
+    <style>
+      /* Navbar Styling */
+      .navbar {
+        transition: all 0.3s ease; /* Sanfter Übergang */
+      }
+
+      .navbar.scrolled {
+        padding: 10px 0; /* Reduzierte Höhe beim Scrollen */
+        background-color: rgba(
+          255,
+          255,
+          255,
+          0.9
+        ); /* Leicht transparenter Hintergrund */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Schatten für besseren Kontrast */
+      }
+ 
+
+      .navbar.scrolled .nav-link  {
+        transition: font-size 0.3s ease; 
+        font-size: 1.3rem; /* Kleinere Schriftgröße beim Scrollen */
+      }
+
+      /* Hintergrund für Section 2 */
+      #section2 {
+        background-color: #f8f9fa; /* Heller Hintergrund */
+        padding: 50px 0; /* Vertikaler Abstand */
+      }
+
+      /* Dark bottom area styling */
+      #footer {
+        min-height: 500px; /* Mindesthöhe */
+      }
+    </style>
+  </head>
   <body>
-    Hallo welt
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <div class="container">
+        <a class="navbar-brand mb-0 h1"
+          ><img
+            src="/images/logo.png"
+            alt="Logo"
+            width="100"
+            height="24"
+            class="d-inline-block align-text-top"
+          />
+          Klima Bündnis Jülich</a
+        >
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" href="#section1">Aktuelles</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section2">Gründungserklärung</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section3">Mitglieder</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Sections -->
+    <section id="section1" class="container" style="margin-top: 80px">
+      <h1>Aktuelles</h1>
+      <div class="mb-3">
+        <div class="card">
+          <img src="images/logo.png" class="card-img-top" alt="News Image" />
+          <div class="card-body">
+            <h2 class="card-title">Überschrift Aktuelles 1</h2>
+            <p class="card-text">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas
+              porttitor congue massa. Fusce posuere, magna sed pulvinar
+              ultricies, purus lectus malesuada libero, sit amet commodo magna
+              eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a
+              tellus.<br />
+              Pellentesque habitant morbi tristique senectus et netus et
+              malesuada fames ac turpis egestas. Proin pharetra nonummy pede.
+              Mauris et orci. Aenean nec lorem. In porttitor. Donec laoreet
+              nonummy augue.<br />
+              Suspendisse dui purus, scelerisque at, vulputate vitae, pretium
+              mattis, nunc. Mauris eget neque at sem venenatis eleifend. Ut
+              nonummy. Fusce aliquet pede non pede. Suspendisse dapibus lorem
+              pellentesque magna. Integer nulla.<br />
+              Donec blandit feugiat ligula. Donec hendrerit, felis et imperdiet
+              euismod, purus ipsum pretium metus, in lacinia nulla nisl eget
+              sapien. Donec ut est in lectus consequat consequat.
+            </p>
+            <p class="text-end">12.02.2025 - Max Muastermann</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="section2" class="container-fluid">
+      <div class="container">
+        <h1>Gründungserklärung</h1>
+        <p>
+          +++ Das Bundesministerium für Gesundheit teilt am 27. Juni 2023 mit,
+          dass bedingt durch den extremen Sommer in Deutschland mit zusätzlichen
+          7600 Toten zu rechnen sei. Die deutschen Städte werden aufgefordert,
+          als Konsequenz Hitzeschutzpläne zu erstellen. +++
+        </p>
+        <p>
+          +++ Am 6. September 2023 teilt der Klimadienst des Europäischen
+          Erdbeobachtungsprogramms Copernicus mit, dass der Sommer 2023 global
+          gesehen der mit Abstand heißeste Sommer seit Beginn der Aufzeichnungen
+          war. Die mittlere globale Temperatur sticht mit einer Erhöhung von 0.7
+          °C gegenüber dem langjährigen Mittel dramatisch aus der langen
+          Zeitreihe der Messungen hervor. +++
+        </p>
+        <p>
+          +++ September 2023: Der Sommer 2023 ist in Jülich nicht so heiß wie
+          der Spitzenreiter 2018, liegt aber immer noch mehr als 2°C über dem
+          langjährigen Mittelwert für die Stadt und bestätigt den Trend der
+          kontinuierlich ansteigenden Sommertemperaturen. +++
+        </p>
+        <p>
+          +++ Oktober 2023: In der Antwort zu den Eingaben der Bürger:innen zu
+          dem geplanten Bauvorhaben am Schwanenquartier wird auf die Forderung
+          nach einer Stadtentwicklung im Sinne des Jülicher Klimaschutzkonzeptes
+          von 2012 erwidert, dass dieses Konzept auf die „Entwicklung von
+          konkreten Maßnahmen zur Minderung des CO2-Ausstoßes über die Sanierung
+          und Neubau von technischen Systemen“ abzielt und daher für das
+          konkrete Bauvorhaben keine Bedeutung habe. +++
+        </p>
+        <p>
+          +++ Am 26. Oktober 2023 verabschiedet der Stadtrat mit 23 zu 13
+          Stimmen die Offenlegung des Bebauungsplans für das Schwanenquartier,
+          von dem zusammen mit den weiteren Bauvorhaben am Walramplatz und
+          Schlossplatz erhebliche langfristige Einflüsse auf das Stadtklima zu
+          erwarten sind. +++
+        </p>
+        <p>
+          Verkehrte Welt, denken wir uns als Bürger:innen, die die
+          Herausforderungen des Klimawandels auch für unsere Stadt sehr ernst
+          nehmen. Wir werden angesichts der steigenden Temperaturen mit einem
+          Verlust an Lebensqualität zu rechnen haben, und das wird in erster
+          Linie unsere älteren Mitbürger:innen betreffen, aber nicht nur sie.
+          Aus den Antworten zum Beteiligungsprozess der Öffentlichkeit am
+          Bauprojekt Schwanenquartier geht jedoch sehr deutlich hervor, dass die
+          Einwendungen der Bürger:innen hier nicht ernst genommen werden. Alle
+          eingebrachten substanziellen Einwendungen gegen das Bauvorhaben werden
+          als nicht relevant eingestuft. Angesichts dieser Situation haben sich
+          mehrere Jülicher Initiativen und Vereine aus dem Bereich Klima- und
+          Umweltschutz dazu entschlossen, ihre Kräfte zu bündeln und ein
+          Jülicher Klimaschutzbündnis ins Leben zu rufen. Wir wollen dem
+          Klimaschutz eine unüberhörbare Stimme in der Stadt geben, da einzelne
+          Bekundungen offensichtlich kein Gehör finden. An die
+          Entscheidungsträger:Innen unserer Stadt geht die Botschaft, dass sie
+          mit unserer vereinten Energie zu rechnen haben. Das gilt für sehr
+          viele brennende Themen, die in der Stadt brachliegen: - eine
+          zukunftsorientierte Stadt- und Verkehrsplanung, die den Klimawandel
+          mitdenkt – eine Jülicher Baumschutzverordnung, die den Bestand an
+          Stadtbäumen absichern soll – eine auf die Zukunft ausgerichtete und am
+          Gemeinwohl orientierte Stadtentwicklung, die weit über das Integrierte
+          Handlungskonzept hinausgehen muss. Klimabündnis Jülich Kontakt
+          klimabuendnis-juelich@web.de SprecherInnen: Andreas Petzold, Sonja
+          Völler Klimabündnis Jülich - Bündniserklärung 2 / 2 Der Landkreis
+          Düren möchte bis 2035 klimaneutral sein und hat dazu ein
+          Klimaschutzprogramm veröffentlicht. Doch es geht um mehr als um
+          Klimaneutralität. Jülich mit seinen Forschungseinrichtungen und dem
+          Brainergy Park könnte die Synergien dieser reichen
+          Forschungslandschaft nutzen und ein Paradebeispiel für die Anpassung
+          einer Stadtentwicklung an den Klimawandel werden. Wir wollen
+          mithelfen, dass die Stadt diese große Chance wahrnimmt. Wir werden uns
+          mit all unserer positiven Energie dafür einsetzen und für die
+          Erfordernisse einer lebenswerten und für die Zukunft gerüsteten
+          Gemeinde eintreten.
+          <br />
+          Jülich, den 23. November 2023
+        </p>
+      </div>
+    </section>
+    <section id="section3" class="container mt-5">
+      <h1>Mitglieder</h1>
+      <!-- Container mit drei Karten -->
+      <div class="mt-5">
+        <div class="row mb-3">
+          <!-- Karte 1 -->
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="/images/person_placeholer.svg"
+                class="card-img-top"
+                alt="Person 1"
+              />
+              <div class="card-body">
+                <h2 class="card-title">Max Mustermann</h2>
+                <p class="card-text">
+                  Max ist ein engagierter Klimaschützer und Sprecher des
+                  Bündnisses.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Karte 2 -->
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="/images/person_placeholer.svg"
+                class="card-img-top"
+                alt="Person 2"
+              />
+              <div class="card-body">
+                <h2 class="card-title">Sonja Völler</h2>
+                <p class="card-text">
+                  Sonja setzt sich für nachhaltige Stadtentwicklung und
+                  Klimaschutz ein.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Karte 3 -->
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="/images/person_placeholer.svg"
+                class="card-img-top"
+                alt="Person 3"
+              />
+              <div class="card-body">
+                <h2 class="card-title">Andreas Petzold</h2>
+                <p class="card-text">
+                  Andreas ist Experte für erneuerbare Energien und Mitglied des
+                  Bündnisses.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <div id="footer" class="container-fluid bg-dark text-white py-4">
+      <div class="container text-center">
+        <p>&copy; 2025 Klima Bündnis Jülich. Alle Rechte vorbehalten.</p>
+      </div>
+      <div class="container">
+        <h1>Impressum</h1>
+        <p>
+          Max Mustermann<br />
+          Musterstra&szlig;e 111<br />
+          Geb&auml;ude 44<br />
+          90210 Musterstadt
+        </p>
+
+        <h2>Kontakt</h2>
+        <p>
+          Telefon: +49 (0) 123 44 55 66<br />
+          Telefax: +49 (0) 123 44 55 99<br />
+          E-Mail: mustermann@musterfirma.de
+        </p>
+
+        <h2>Redaktionell verantwortlich</h2>
+        <p>
+          Beate Beispielhaft<br />
+          Musterstra&szlig;e 110<br />
+          90210 Musterstadt
+        </p>
+
+        <p>
+          Quelle:
+          <a href="https://www.e-recht24.de/impressum-generator.html"
+            >https://www.e-recht24.de/impressum-generator.html</a
+          >
+        </p>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="/js/bootstrap.bundle.min.js?5.3.0"></script>
+    <script>
+      // Funktion, um die Navbar beim Scrollen anzupassen
+      window.addEventListener("scroll", function () {
+        const navbar = document.querySelector(".navbar");
+        if (window.scrollY > 50 && window.innerWidth > 991) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
+      });
+    </script>
   </body>
 </html>
